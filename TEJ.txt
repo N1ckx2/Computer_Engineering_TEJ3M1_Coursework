@@ -1,0 +1,48 @@
+#include <iostream>
+#include <Windows.h>
+#include <string>
+#include <stdio.h>
+#include <conio.h>
+#include <time.h>
+
+using namespace std;
+
+srand(time(NULL));
+rand()%int
+
+Out32(PPORT_BASE, int);
+system("PAUSE");
+kbhit();
+system("CLS");
+cin.get(); //getch();
+input = Inp32 (PPORT_INP); //120 nothing, 56 = 1, 248 = 2, 88 = 3, 104 = 4, 112 = 5
+
+void gotoxy(int x, int y)
+{
+	srand(time(NULL));
+	COORD coord;
+	coord.X = x;
+	coord.Y = y;
+	SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), coord);
+}
+
+string Binary(int y)
+{
+	l = "";
+	for(int x = 128; x >= 1; x/=2)
+	{
+          if (y/x >= 1) 
+          {
+               l = "1" + l;
+               y -= x;
+          }
+          else if (y/x == 0) l = "0" + l;
+    	}
+    return l;
+}
+
+2 digiter: 	tens = n / 10;
+		ones = n % 10;
+		final = tens + (ones*16);
+
+return 0;
